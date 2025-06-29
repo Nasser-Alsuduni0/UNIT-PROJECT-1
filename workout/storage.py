@@ -13,13 +13,16 @@ def load_workouts_from_json(filename):
         with open(filename, 'r') as f:
             data = json.load(f)
             for item in data:
-                workouts.append(
-                    Workout(
-                        workout_type=item["workout_type"],
-                        workout_duration=item["workout_duration"],
-                        workout_date=item["workout_date"]
-                    )
-                )
+             workouts.append(
+                 Workout(
+                     workout_type=item.get("workout_type"),
+                     workout_duration=item.get("workout_duration", 0),
+                     workout_date=item.get("workout_date"),
+                     km_run=item.get("kilometers run", 0),
+                     sets=item.get("sets", 0)
+                 )
+             )
+
     except FileNotFoundError:
         print("No saved workouts yet.")
     except json.JSONDecodeError:

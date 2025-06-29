@@ -1,7 +1,23 @@
 [
   {
     "workout_type": "Running",
-    "workout_duration": 50,
-    "workout_date": "2025-06-28"
+    "workout_duration": 120,
+    "workout_date": "2025-06-29",
+    "kilometers run": "10",
+    "sets": null
+  },
+  {
+    "workout_type": "Bench press",
+    "workout_duration": 20,
+    "workout_date": "2025-06-29",
+    "kilometers run": null,
+    "sets": 4
+  },
+  {
+    "workout_type": "Running and Bench press",
+    "workout_duration": 270,
+    "workout_date": "2025-06-29",
+    "kilometers run": "50",
+    "sets": 4
   }
 ]

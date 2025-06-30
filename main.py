@@ -1,6 +1,6 @@
-from workout.user_input import get_workout_from_user
-from workout.storage import save_workouts_to_json, load_workouts_from_json
-from workout.analytics import show_workout_summary
+from workout_tracker.user_input import get_workout_from_user
+from workout_tracker.storage import save_workouts_to_json, load_workouts_from_json
+from workout_tracker.analytics import show_workout_summary
 
 
 FILENAME = "data/workouts.json"

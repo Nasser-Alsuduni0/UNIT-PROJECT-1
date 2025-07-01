@@ -33,6 +33,16 @@ class Workout:
 
         }
 
+    @staticmethod
+    def from_dict(data):
+        return Workout(
+            workout_type=data.get("workout_type"),
+            workout_duration=data.get("workout_duration", 0),
+            workout_date=data.get("workout_date"),
+            km_run=data.get("kilometers run", 0),
+            sets=data.get("sets", 0)
+        )
+
     
 
     

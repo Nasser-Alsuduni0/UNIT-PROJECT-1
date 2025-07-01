@@ -1,0 +1,12 @@
+[
+  {
+    "meal_name": "chicken",
+    "calories": 300,
+    "date": "2025-07-01"
+  },
+  {
+    "meal_name": "egg",
+    "calories": 200,
+    "date": "2025-07-01"
+  }
+]

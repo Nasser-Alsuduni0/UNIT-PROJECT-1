@@ -10,7 +10,12 @@ def get_workout_from_user():
         ).strip()
 
         if workout_type_choice == "1":
-            km_run = input("How many kilometers did you run? ").strip()
+            while True:
+                km_run = input("How many kilometers did you run? ").strip()
+                if km_run.replace('.', '', 1).isdigit():
+                    break
+                else:
+                    print("Please enter a valid number for kilometers.")
             duration = int(input("Approximate duration in minutes: ").strip())
             return Workout("Running", duration, today , km_run , None)
 
@@ -38,7 +43,12 @@ def get_workout_from_user():
             
         elif workout_type_choice == "3":
             
-            km_run =input("How many kilometers did you run? \n > ")
+            while True:
+                km_run = input("How many kilometers did you run? \n > ").strip()
+                if km_run.replace('.', '', 1).isdigit():
+                    break
+                else:
+                    print("Please enter a valid number for kilometers.")
             while True:
                 lifting_choice = input(
                     "Choose your Weightlifting workout:\n 1 - Deadlift\n 2 - Bench press\n 3 - Dumbbell curl\n> "

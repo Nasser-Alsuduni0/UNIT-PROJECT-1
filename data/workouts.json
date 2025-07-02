@@ -26,5 +26,12 @@
     "workout_date": "2025-07-01",
     "kilometers run": "12",
     "sets": null
+  },
+  {
+    "workout_type": "Running",
+    "workout_duration": 100,
+    "workout_date": "2025-07-02",
+    "kilometers run": "10",
+    "sets": null
   }
 ]

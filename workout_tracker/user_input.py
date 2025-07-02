@@ -6,7 +6,7 @@ def get_workout_from_user():
 
     while True:
         workout_type_choice = input(
-            "Choose your workout number:\n 1 - Running\n 2 - Weightlifting\n  3 - Both> "
+            "Choose your workout number:\n 1 - Running\n 2 - Weightlifting\n 3 - Both \n> "
         ).strip()
 
         if workout_type_choice == "1":
